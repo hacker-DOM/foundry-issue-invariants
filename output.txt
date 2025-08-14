@@ -1,0 +1,2529 @@
+Compiling 1 files with Solc 0.8.30
+Solc 0.8.30 finished in 493.33ms
+Compiler run successful!
+
+Ran 1 test for test/Counter.t.sol:CounterTest
+[PASS] invariant_NumberIsNonNegative() (runs: 256, calls: 128000, reverts: 921)
+Logs:
+  Invariant check number: 1
+
+Traces:
+  [137242] CounterTest::setUp()
+    ├─ [96345] → new Counter@0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+    │   └─ ← [Return] 481 bytes of code
+    ├─ [2592] Counter::setNumber(0)
+    │   └─ ← [Stop]
+    └─ ← [Stop]
+
+  [22418] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0 → 1
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 1 → 2
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 2 → 3
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(4134049212660670566442620991288908595792600605807533449896536328949797614 [4.134e72])
+    ├─  storage changes:
+    │   @ 0: 3 → 0x000256fc685cf5b7bad96d92feabb20cb056e6d2fa6925dc3f3616486fcd12ee
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000256fc685cf5b7bad96d92feabb20cb056e6d2fa6925dc3f3616486fcd12ee → 0x000256fc685cf5b7bad96d92feabb20cb056e6d2fa6925dc3f3616486fcd12ef
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000256fc685cf5b7bad96d92feabb20cb056e6d2fa6925dc3f3616486fcd12ef → 0x000256fc685cf5b7bad96d92feabb20cb056e6d2fa6925dc3f3616486fcd12f0
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(6885)
+    ├─  storage changes:
+    │   @ 0: 0x000256fc685cf5b7bad96d92feabb20cb056e6d2fa6925dc3f3616486fcd12f0 → 6885
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6885 → 6886
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(9426814033118375940699761785518410377447632720 [9.426e45])
+    ├─  storage changes:
+    │   @ 0: 6886 → 0x00000000000000000000000001a6b6849aff3fb34986ba0d15360adf29e86f50
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000001a6b6849aff3fb34986ba0d15360adf29e86f50 → 0x00000000000000000000000001a6b6849aff3fb34986ba0d15360adf29e86f51
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(6050)
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000001a6b6849aff3fb34986ba0d15360adf29e86f51 → 6050
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6050 → 6051
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6051 → 6052
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1164735423663900757968983166240946811943541301 [1.164e45])
+    ├─  storage changes:
+    │   @ 0: 6052 → 0x00000000000000000000000000343a81c6dc4937252942711e71e52382e05a35
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(165046620181245215589027530185199031888514692097863459288921055222 [1.65e65])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000343a81c6dc4937252942711e71e52382e05a35 → 0x00000000019134c38e9ac6988b2c5e5ccf74aba82b47aacc582ca4abf98a9ff6
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(115792089237316195423570985008687907853269984665640564039457584007913129639934 [1.157e77])
+    ├─  storage changes:
+    │   @ 0: 0x00000000019134c38e9ac6988b2c5e5ccf74aba82b47aacc582ca4abf98a9ff6 → 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe → 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(0)
+    ├─  storage changes:
+    │   @ 0: 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff → 0
+    └─ ← [Stop]
+
+  [22492] Counter::setNumber(5385498965618664202877745290184820697748040981982 [5.385e48])
+    ├─  storage changes:
+    │   @ 0: 0 → 0x000000000000000000000003af5620321c2b0416859bf4879201a19e3e121dde
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000003af5620321c2b0416859bf4879201a19e3e121dde → 0x000000000000000000000003af5620321c2b0416859bf4879201a19e3e121ddf
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(115442834693437578963762 [1.154e23])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000003af5620321c2b0416859bf4879201a19e3e121ddf → 0x0000000000000000000000000000000000000000000018722b29ef5457c66b32
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(3627)
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000000018722b29ef5457c66b32 → 3627
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5393300466305779122261011026490564318491 [5.393e39])
+    ├─  storage changes:
+    │   @ 0: 3627 → 0x0000000000000000000000000000000fd977e2ffa9802b95ad9245d87968951b
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000fd977e2ffa9802b95ad9245d87968951b → 0x0000000000000000000000000000000fd977e2ffa9802b95ad9245d87968951c
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000fd977e2ffa9802b95ad9245d87968951c → 0x0000000000000000000000000000000fd977e2ffa9802b95ad9245d87968951d
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000fd977e2ffa9802b95ad9245d87968951d → 0x0000000000000000000000000000000fd977e2ffa9802b95ad9245d87968951e
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000fd977e2ffa9802b95ad9245d87968951e → 0x0000000000000000000000000000000fd977e2ffa9802b95ad9245d87968951f
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(102017620554245811361303123454463274705851579239394526766061549752855 [1.02e68])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000fd977e2ffa9802b95ad9245d87968951f → 0x00000003c8b71921cb7d49b76e4d2357503c0d658f34b61e17454ad43caf9217
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000003c8b71921cb7d49b76e4d2357503c0d658f34b61e17454ad43caf9217 → 0x00000003c8b71921cb7d49b76e4d2357503c0d658f34b61e17454ad43caf9218
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000003c8b71921cb7d49b76e4d2357503c0d658f34b61e17454ad43caf9218 → 0x00000003c8b71921cb7d49b76e4d2357503c0d658f34b61e17454ad43caf9219
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000003c8b71921cb7d49b76e4d2357503c0d658f34b61e17454ad43caf9219 → 0x00000003c8b71921cb7d49b76e4d2357503c0d658f34b61e17454ad43caf921a
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000003c8b71921cb7d49b76e4d2357503c0d658f34b61e17454ad43caf921a → 0x00000003c8b71921cb7d49b76e4d2357503c0d658f34b61e17454ad43caf921b
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(367877186680086809781023448898936771027585550850234922655772107968644379 [3.678e71])
+    ├─  storage changes:
+    │   @ 0: 0x00000003c8b71921cb7d49b76e4d2357503c0d658f34b61e17454ad43caf921b → 0x0000354d52bf8cacf0f5a58921115d598d441bf0335725b6ad01ee8d9b7c851b
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000354d52bf8cacf0f5a58921115d598d441bf0335725b6ad01ee8d9b7c851b → 0x0000354d52bf8cacf0f5a58921115d598d441bf0335725b6ad01ee8d9b7c851c
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1181896879296811432 [1.181e18])
+    ├─  storage changes:
+    │   @ 0: 0x0000354d52bf8cacf0f5a58921115d598d441bf0335725b6ad01ee8d9b7c851c → 0x0000000000000000000000000000000000000000000000001066f0f323a111a8
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(7377132119424921062798317403178755987955417311265 [7.377e48])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000000000001066f0f323a111a8 → 0x0000000000000000000000050c320b8d2254f55a0aa1fc8de2a7e44327876821
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(2509904698461966538866578696880139486191430392778978862189 [2.509e57])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000050c320b8d2254f55a0aa1fc8de2a7e44327876821 → 0x0000000000000000665ca0b4288cb24e28fb0b22c617a6f4ac0812983349a46d
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(7385)
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000665ca0b4288cb24e28fb0b22c617a6f4ac0812983349a46d → 7385
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 7385 → 7386
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 7386 → 7387
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(340392504035951153695843 [3.403e23])
+    ├─  storage changes:
+    │   @ 0: 7387 → 0x000000000000000000000000000000000000000000004814b6f13feaec2acc63
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(2327070578918261640426001 [2.327e24])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000004814b6f13feaec2acc63 → 0x00000000000000000000000000000000000000000001ecc6bfb541d1e0c87211
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(3)
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000001ecc6bfb541d1e0c87211 → 3
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 3 → 4
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(901435171903615441708371110437386071962911468 [9.014e44])
+    ├─  storage changes:
+    │   @ 0: 4 → 0x00000000000000000000000000286bf7e1694d877052255225874696e3e582ec
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000286bf7e1694d877052255225874696e3e582ec → 0x00000000000000000000000000286bf7e1694d877052255225874696e3e582ed
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000286bf7e1694d877052255225874696e3e582ed → 0x00000000000000000000000000286bf7e1694d877052255225874696e3e582ee
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000286bf7e1694d877052255225874696e3e582ee → 0x00000000000000000000000000286bf7e1694d877052255225874696e3e582ef
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000286bf7e1694d877052255225874696e3e582ef → 0x00000000000000000000000000286bf7e1694d877052255225874696e3e582f0
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(7699913682833468270914668432187204496 [7.699e36])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000286bf7e1694d877052255225874696e3e582f0 → 0x0000000000000000000000000000000005caf30e0c23a0a667cbcef484c02390
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(6105)
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000005caf30e0c23a0a667cbcef484c02390 → 6105
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(13881 [1.388e4])
+    ├─  storage changes:
+    │   @ 0: 6105 → 13881
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(4913778358941847067078175549676299547827863770727569117095238702499957 [4.913e69])
+    ├─  storage changes:
+    │   @ 0: 13881 → 0x000000b6431d83f8cb93a1e5c7bbb89a5b96e1bec0c58cbdf3bbe3952b648875
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000b6431d83f8cb93a1e5c7bbb89a5b96e1bec0c58cbdf3bbe3952b648875 → 0x000000b6431d83f8cb93a1e5c7bbb89a5b96e1bec0c58cbdf3bbe3952b648876
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(35862775456213452279026880749687784981487505650103842394891569393498105513 [3.586e73])
+    ├─  storage changes:
+    │   @ 0: 0x000000b6431d83f8cb93a1e5c7bbb89a5b96e1bec0c58cbdf3bbe3952b648876 → 0x00144c3045e53bfd2db136b1149ca2da8076b39b68d05f0ac39038a0b138a6a9
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1556)
+    ├─  storage changes:
+    │   @ 0: 0x00144c3045e53bfd2db136b1149ca2da8076b39b68d05f0ac39038a0b138a6a9 → 1556
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 1556 → 1557
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(115792089237316195423570985008687907853269984665640564039457584007913129639933 [1.157e77])
+    ├─  storage changes:
+    │   @ 0: 1557 → 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(2071)
+    ├─  storage changes:
+    │   @ 0: 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd → 2071
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 2071 → 2072
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1144119566317046921904 [1.144e21])
+    ├─  storage changes:
+    │   @ 0: 2072 → 0x00000000000000000000000000000000000000000000003e05d93bc2958efab0
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000003e05d93bc2958efab0 → 0x00000000000000000000000000000000000000000000003e05d93bc2958efab1
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(115792089237316195423570985008687907853269984665640564039457584007913129639933 [1.157e77])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000003e05d93bc2958efab1 → 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(183837917219958843188545032235465936518 [1.838e38])
+    ├─  storage changes:
+    │   @ 0: 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd → 0x000000000000000000000000000000008a4de51cac5e59b63b0be8056e658e86
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000008a4de51cac5e59b63b0be8056e658e86 → 0x000000000000000000000000000000008a4de51cac5e59b63b0be8056e658e87
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000008a4de51cac5e59b63b0be8056e658e87 → 0x000000000000000000000000000000008a4de51cac5e59b63b0be8056e658e88
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000008a4de51cac5e59b63b0be8056e658e88 → 0x000000000000000000000000000000008a4de51cac5e59b63b0be8056e658e89
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(61)
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000008a4de51cac5e59b63b0be8056e658e89 → 61
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 61 → 62
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(2325449554917142710128638317562432509356338618999976594609037825904565 [2.325e69])
+    ├─  storage changes:
+    │   @ 0: 62 → 0x000000564176bad081927df2c9e1b2483af1fc8a0f117e38212d6c8ee9798fb5
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(3164777 [3.164e6])
+    ├─  storage changes:
+    │   @ 0: 0x000000564176bad081927df2c9e1b2483af1fc8a0f117e38212d6c8ee9798fb5 → 0x0000000000000000000000000000000000000000000000000000000000304a69
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000000000000000000000304a69 → 0x0000000000000000000000000000000000000000000000000000000000304a6a
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000000000000000000000304a6a → 0x0000000000000000000000000000000000000000000000000000000000304a6b
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(2484827415382626501314278890040494331956514513247335470808311859 [2.484e63])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000000000000000000000304a6b → 0x0000000000060a4fd8794849186c931f47f277234e4e42621239d9f4fe862833
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000060a4fd8794849186c931f47f277234e4e42621239d9f4fe862833 → 0x0000000000060a4fd8794849186c931f47f277234e4e42621239d9f4fe862834
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000060a4fd8794849186c931f47f277234e4e42621239d9f4fe862834 → 0x0000000000060a4fd8794849186c931f47f277234e4e42621239d9f4fe862835
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000060a4fd8794849186c931f47f277234e4e42621239d9f4fe862835 → 0x0000000000060a4fd8794849186c931f47f277234e4e42621239d9f4fe862836
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(4426998484582206914570153847140281652882964934297001824646 [4.426e57])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000060a4fd8794849186c931f47f277234e4e42621239d9f4fe862836 → 0x0000000000000000b48c05523baad85db10a2b57ba8e0f5c4bc40953836a9186
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000b48c05523baad85db10a2b57ba8e0f5c4bc40953836a9186 → 0x0000000000000000b48c05523baad85db10a2b57ba8e0f5c4bc40953836a9187
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(2984746261093529177544404 [2.984e24])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000b48c05523baad85db10a2b57ba8e0f5c4bc40953836a9187 → 0x00000000000000000000000000000000000000000002780b6b45891f362fd6d4
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(43299637473075100324321683558945065666468908891419650201347 [4.329e58])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000002780b6b45891f362fd6d4 → 0x0000000000000006e5e54eff712e1b808516bf8b8af45db90b77dba137b69703
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000006e5e54eff712e1b808516bf8b8af45db90b77dba137b69703 → 0x0000000000000006e5e54eff712e1b808516bf8b8af45db90b77dba137b69704
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000006e5e54eff712e1b808516bf8b8af45db90b77dba137b69704 → 0x0000000000000006e5e54eff712e1b808516bf8b8af45db90b77dba137b69705
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000006e5e54eff712e1b808516bf8b8af45db90b77dba137b69705 → 0x0000000000000006e5e54eff712e1b808516bf8b8af45db90b77dba137b69706
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(27112280262980894607455516610 [2.711e28])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000006e5e54eff712e1b808516bf8b8af45db90b77dba137b69706 → 0x0000000000000000000000000000000000000000579ac0aa1ba5111e86d377c2
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000579ac0aa1ba5111e86d377c2 → 0x0000000000000000000000000000000000000000579ac0aa1ba5111e86d377c3
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000579ac0aa1ba5111e86d377c3 → 0x0000000000000000000000000000000000000000579ac0aa1ba5111e86d377c4
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000579ac0aa1ba5111e86d377c4 → 0x0000000000000000000000000000000000000000579ac0aa1ba5111e86d377c5
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(529546281999469001923908333613482 [5.295e32])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000579ac0aa1ba5111e86d377c5 → 0x0000000000000000000000000000000000001a1bd051eb644b0abfdd066231aa
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(35685902 [3.568e7])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000001a1bd051eb644b0abfdd066231aa → 0x000000000000000000000000000000000000000000000000000000000220860e
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000000000220860e → 0x000000000000000000000000000000000000000000000000000000000220860f
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000000000220860f → 0x0000000000000000000000000000000000000000000000000000000002208610
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(21019047 [2.101e7])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000000000000000000002208610 → 0x000000000000000000000000000000000000000000000000000000000140b9a7
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000000000140b9a7 → 0x000000000000000000000000000000000000000000000000000000000140b9a8
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000000000140b9a8 → 0x000000000000000000000000000000000000000000000000000000000140b9a9
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000000000140b9a9 → 0x000000000000000000000000000000000000000000000000000000000140b9aa
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000000000140b9aa → 0x000000000000000000000000000000000000000000000000000000000140b9ab
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000000000140b9ab → 0x000000000000000000000000000000000000000000000000000000000140b9ac
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000000000140b9ac → 0x000000000000000000000000000000000000000000000000000000000140b9ad
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(518)
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000000000140b9ad → 518
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(265)
+    ├─  storage changes:
+    │   @ 0: 518 → 265
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(249118596497350413758877504898423689405 [2.491e38])
+    ├─  storage changes:
+    │   @ 0: 265 → 0x00000000000000000000000000000000bb6a7f18a504d98dc8548be19f6d90bd
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1834647640255657634306789596265157092894765549340763020 [1.834e54])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000bb6a7f18a504d98dc8548be19f6d90bd → 0x000000000000000000132794db1bc1c2da1784b7c07f4c615424e0437ec6a38c
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1920)
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000132794db1bc1c2da1784b7c07f4c615424e0437ec6a38c → 1920
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5437057938401849180027411892890062572795656939166502076246606329003 [5.437e66])
+    ├─  storage changes:
+    │   @ 0: 1920 → 0x0000000033a0c17633e0b15b5acbe8bcef51f65c34aae15a6bc5ea79d0d9b4ab
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1510065228630743 [1.51e15])
+    ├─  storage changes:
+    │   @ 0: 0x0000000033a0c17633e0b15b5acbe8bcef51f65c34aae15a6bc5ea79d0d9b4ab → 0x00000000000000000000000000000000000000000000000000055d65758a4ad7
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000055d65758a4ad7 → 0x00000000000000000000000000000000000000000000000000055d65758a4ad8
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(8855663396921435063548741682331256508418326 [8.855e42])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000055d65758a4ad8 → 0x000000000000000000000000000065a874ab5ac060cda0b818b0035ecd488916
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(384434775156609504 [3.844e17])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000065a874ab5ac060cda0b818b0035ecd488916 → 0x0000000000000000000000000000000000000000000000000555c964248451e0
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(306)
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000000000000555c964248451e0 → 306
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5036)
+    ├─  storage changes:
+    │   @ 0: 306 → 5036
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(7486825 [7.486e6])
+    ├─  storage changes:
+    │   @ 0: 5036 → 0x0000000000000000000000000000000000000000000000000000000000723d69
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000000000000000000000723d69 → 0x0000000000000000000000000000000000000000000000000000000000723d6a
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000000000000000000000723d6a → 0x0000000000000000000000000000000000000000000000000000000000723d6b
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(6754)
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000000000000000000000723d6b → 6754
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1978446440267818692105484513001159741786050267612 [1.978e48])
+    ├─  storage changes:
+    │   @ 0: 6754 → 0x0000000000000000000000015a8c9b4ed9247ab8116561973bd48b9e2f5409dc
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(429)
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000015a8c9b4ed9247ab8116561973bd48b9e2f5409dc → 429
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 429 → 430
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(154155390701045108737272221706634520863082411834615050479026 [1.541e59])
+    ├─  storage changes:
+    │   @ 0: 430 → 0x00000000000000188ef16022dfd64a1445694b740361911b7baa5da7b3b325b2
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000188ef16022dfd64a1445694b740361911b7baa5da7b3b325b2 → 0x00000000000000188ef16022dfd64a1445694b740361911b7baa5da7b3b325b3
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(7288)
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000188ef16022dfd64a1445694b740361911b7baa5da7b3b325b3 → 7288
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(2897707978237251197586597407999793174006659426117441402315539916075399988788 [2.897e75])
+    ├─  storage changes:
+    │   @ 0: 7288 → 0x06680b6a8ec7cd7e29cb11adb8f0b8a35bace6d76a626f9e3723e7b2cb094634
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x06680b6a8ec7cd7e29cb11adb8f0b8a35bace6d76a626f9e3723e7b2cb094634 → 0x06680b6a8ec7cd7e29cb11adb8f0b8a35bace6d76a626f9e3723e7b2cb094635
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x06680b6a8ec7cd7e29cb11adb8f0b8a35bace6d76a626f9e3723e7b2cb094635 → 0x06680b6a8ec7cd7e29cb11adb8f0b8a35bace6d76a626f9e3723e7b2cb094636
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(831464985072471572082 [8.314e20])
+    ├─  storage changes:
+    │   @ 0: 0x06680b6a8ec7cd7e29cb11adb8f0b8a35bace6d76a626f9e3723e7b2cb094636 → 0x00000000000000000000000000000000000000000000002d12e506a21422fe72
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(0)
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000002d12e506a21422fe72 → 0
+    └─ ← [Stop]
+
+  [22418] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0 → 1
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 1 → 2
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(578421287459273024445804852077444894326796422249381366786 [5.784e56])
+    ├─  storage changes:
+    │   @ 0: 2 → 0x000000000000000017970001332ecfbfe938d1cff97c0c7fc99a4fe191b00c02
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000017970001332ecfbfe938d1cff97c0c7fc99a4fe191b00c02 → 0x000000000000000017970001332ecfbfe938d1cff97c0c7fc99a4fe191b00c03
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(3581135570280277991150894533017714804758616599139599829412 [3.581e57])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000017970001332ecfbfe938d1cff97c0c7fc99a4fe191b00c03 → 0x0000000000000000920cccc6389768fb072a6e2095e0e8259b2e6c590f40c9a4
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000920cccc6389768fb072a6e2095e0e8259b2e6c590f40c9a4 → 0x0000000000000000920cccc6389768fb072a6e2095e0e8259b2e6c590f40c9a5
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5203)
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000920cccc6389768fb072a6e2095e0e8259b2e6c590f40c9a5 → 5203
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5203 → 5204
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5204 → 5205
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5205 → 5206
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5206 → 5207
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5207 → 5208
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5704)
+    ├─  storage changes:
+    │   @ 0: 5208 → 5704
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5704 → 5705
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5705 → 5706
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5706 → 5707
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5707 → 5708
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(7299)
+    ├─  storage changes:
+    │   @ 0: 5708 → 7299
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 7299 → 7300
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 7300 → 7301
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(71109756 [7.11e7])
+    ├─  storage changes:
+    │   @ 0: 7301 → 0x00000000000000000000000000000000000000000000000000000000043d0c7c
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(3797041856 [3.797e9])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000000000043d0c7c → 0x00000000000000000000000000000000000000000000000000000000e25242c0
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000000000e25242c0 → 0x00000000000000000000000000000000000000000000000000000000e25242c1
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000000000e25242c1 → 0x00000000000000000000000000000000000000000000000000000000e25242c2
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1)
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000000000e25242c2 → 1
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 1 → 2
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 2 → 3
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5719)
+    ├─  storage changes:
+    │   @ 0: 3 → 5719
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(0)
+    ├─  storage changes:
+    │   @ 0: 5719 → 0
+    └─ ← [Stop]
+
+  [22418] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0 → 1
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 1 → 2
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(359)
+    ├─  storage changes:
+    │   @ 0: 2 → 359
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 359 → 360
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 360 → 361
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(729)
+    ├─  storage changes:
+    │   @ 0: 361 → 729
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(7446)
+    ├─  storage changes:
+    │   @ 0: 729 → 7446
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(429)
+    ├─  storage changes:
+    │   @ 0: 7446 → 429
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 429 → 430
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 430 → 431
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 431 → 432
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 432 → 433
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 433 → 434
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(115792089237316195423570985008687907853269984665640564039457584007913129639934 [1.157e77])
+    ├─  storage changes:
+    │   @ 0: 434 → 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe → 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(4913778358941847067078175549676299547827863770727569117095238702499957 [4.913e69])
+    ├─  storage changes:
+    │   @ 0: 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff → 0x000000b6431d83f8cb93a1e5c7bbb89a5b96e1bec0c58cbdf3bbe3952b648875
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(6544596069565898264738194067276045725539785 [6.544e42])
+    ├─  storage changes:
+    │   @ 0: 0x000000b6431d83f8cb93a1e5c7bbb89a5b96e1bec0c58cbdf3bbe3952b648875 → 0x00000000000000000000000000004b20d6da6dfa165847cca1f5af6ac2651dc9
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(2973)
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000004b20d6da6dfa165847cca1f5af6ac2651dc9 → 2973
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 2973 → 2974
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 2974 → 2975
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(464584176126428744214558321739741902709374174655740834887 [4.645e56])
+    ├─  storage changes:
+    │   @ 0: 2975 → 0x000000000000000012f27c30d97265e9538818d1d8174a6cf0b00625ec16f447
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(177362149 [1.773e8])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000012f27c30d97265e9538818d1d8174a6cf0b00625ec16f447 → 0x000000000000000000000000000000000000000000000000000000000a9254e5
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000000000a9254e5 → 0x000000000000000000000000000000000000000000000000000000000a9254e6
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(340392504035951153695844 [3.403e23])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000000000a9254e6 → 0x000000000000000000000000000000000000000000004814b6f13feaec2acc64
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000004814b6f13feaec2acc64 → 0x000000000000000000000000000000000000000000004814b6f13feaec2acc65
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000004814b6f13feaec2acc65 → 0x000000000000000000000000000000000000000000004814b6f13feaec2acc66
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000004814b6f13feaec2acc66 → 0x000000000000000000000000000000000000000000004814b6f13feaec2acc67
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5884)
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000004814b6f13feaec2acc67 → 5884
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(4697)
+    ├─  storage changes:
+    │   @ 0: 5884 → 4697
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 4697 → 4698
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 4698 → 4699
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(31063343826583759586681335581331351359725 [3.106e40])
+    ├─  storage changes:
+    │   @ 0: 4699 → 0x0000000000000000000000000000005b497667a3afb0ef2f8245e22e72b750ed
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(6475)
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000005b497667a3afb0ef2f8245e22e72b750ed → 6475
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(6809)
+    ├─  storage changes:
+    │   @ 0: 6475 → 6809
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6809 → 6810
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(40215882576699510231769989529548300436666608493607577 [4.021e52])
+    ├─  storage changes:
+    │   @ 0: 6810 → 0x000000000000000000006b7cd2cfe0d6d5a02614561f4d1e2567767675393a99
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000006b7cd2cfe0d6d5a02614561f4d1e2567767675393a99 → 0x000000000000000000006b7cd2cfe0d6d5a02614561f4d1e2567767675393a9a
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000006b7cd2cfe0d6d5a02614561f4d1e2567767675393a9a → 0x000000000000000000006b7cd2cfe0d6d5a02614561f4d1e2567767675393a9b
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(603913284265694632603294420293758306527 [6.039e38])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000006b7cd2cfe0d6d5a02614561f4d1e2567767675393a9b → 0x00000000000000000000000000000001c65577c19d000427362aebd301ad48df
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(3314637505826747651038435444504859615091184525701184649845538201 [3.314e63])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000001c65577c19d000427362aebd301ad48df → 0x0000000000080eb4384a81bee26aa29924a9f2f5de74451b972cbb1df613fd99
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000080eb4384a81bee26aa29924a9f2f5de74451b972cbb1df613fd99 → 0x0000000000080eb4384a81bee26aa29924a9f2f5de74451b972cbb1df613fd9a
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(479)
+    ├─  storage changes:
+    │   @ 0: 0x0000000000080eb4384a81bee26aa29924a9f2f5de74451b972cbb1df613fd9a → 479
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(3508289875756604581465033577255674279147208110217715591 [3.508e54])
+    ├─  storage changes:
+    │   @ 0: 479 → 0x00000000000000000024a0d557e9baa3ffe9bc4b0a1f9aaf972d156523d15f87
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000024a0d557e9baa3ffe9bc4b0a1f9aaf972d156523d15f87 → 0x00000000000000000024a0d557e9baa3ffe9bc4b0a1f9aaf972d156523d15f88
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5818)
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000024a0d557e9baa3ffe9bc4b0a1f9aaf972d156523d15f88 → 5818
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5818 → 5819
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(512570500042206214648831213 [5.125e26])
+    ├─  storage changes:
+    │   @ 0: 5819 → 0x000000000000000000000000000000000000000001a7fd067c218f0abf051ced
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000001a7fd067c218f0abf051ced → 0x000000000000000000000000000000000000000001a7fd067c218f0abf051cee
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5673)
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000001a7fd067c218f0abf051cee → 5673
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5673 → 5674
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5674 → 5675
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5675 → 5676
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5676 → 5677
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(411255766522352538429534 [4.112e23])
+    ├─  storage changes:
+    │   @ 0: 5677 → 0x000000000000000000000000000000000000000000005716384335a4deef285e
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(118585686519786929510726690821798224168406515 [1.185e44])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000005716384335a4deef285e → 0x0000000000000000000000000005514c02f06ae4119759edb34c84cb27e2cdf3
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000005514c02f06ae4119759edb34c84cb27e2cdf3 → 0x0000000000000000000000000005514c02f06ae4119759edb34c84cb27e2cdf4
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(512570500042206214648831215 [5.125e26])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000005514c02f06ae4119759edb34c84cb27e2cdf4 → 0x000000000000000000000000000000000000000001a7fd067c218f0abf051cef
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5079)
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000001a7fd067c218f0abf051cef → 5079
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5079 → 5080
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5080 → 5081
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5081 → 5082
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5082 → 5083
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5083 → 5084
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5208)
+    ├─  storage changes:
+    │   @ 0: 5084 → 5208
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(885830565123978468462609462681370015024 [8.858e38])
+    ├─  storage changes:
+    │   @ 0: 5208 → 0x000000000000000000000000000000029a6cc2d79e472ee4c54c48d73fe2b530
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000029a6cc2d79e472ee4c54c48d73fe2b530 → 0x000000000000000000000000000000029a6cc2d79e472ee4c54c48d73fe2b531
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(911151633193119522652866782718045 [9.111e32])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000029a6cc2d79e472ee4c54c48d73fe2b531 → 0x0000000000000000000000000000000000002cec59b612c8c830c5ccb888685d
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(22851967040432626393390178811050300328397230529486395405864888119 [2.285e64])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000002cec59b612c8c830c5ccb888685d → 0x0000000000378cd0627262519e6ecc694a2148b3fffc055f508064c141596737
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(6371)
+    ├─  storage changes:
+    │   @ 0: 0x0000000000378cd0627262519e6ecc694a2148b3fffc055f508064c141596737 → 6371
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6371 → 6372
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(4183783188641312485430320589385763 [4.183e33])
+    ├─  storage changes:
+    │   @ 0: 6372 → 0x000000000000000000000000000000000000ce46c494c4f619c9971c026f3023
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(382196585211370695688303969229305108959 [3.821e38])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000ce46c494c4f619c9971c026f3023 → 0x000000000000000000000000000000011f886282ea610cdf407c4ce2ba8159df
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000011f886282ea610cdf407c4ce2ba8159df → 0x000000000000000000000000000000011f886282ea610cdf407c4ce2ba8159e0
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(0)
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000011f886282ea610cdf407c4ce2ba8159e0 → 0
+    └─ ← [Stop]
+
+  [22418] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0 → 1
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(18804435436672440859507464880412659215554158214062082286 [1.88e55])
+    ├─  storage changes:
+    │   @ 0: 1 → 0x000000000000000000c453d4d87cefb7766d0b32bd59044f566b1511f16508ee
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000c453d4d87cefb7766d0b32bd59044f566b1511f16508ee → 0x000000000000000000c453d4d87cefb7766d0b32bd59044f566b1511f16508ef
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(37149671158191137448514798969233273609691440028374 [3.714e49])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000c453d4d87cefb7766d0b32bd59044f566b1511f16508ef → 0x0000000000000000000000196b38de5d65fbb57bd1630c3b76b33f4b45071ad6
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1546853322097363735441 [1.546e21])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000196b38de5d65fbb57bd1630c3b76b33f4b45071ad6 → 0x000000000000000000000000000000000000000000000053dae6f4de0e435391
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000053dae6f4de0e435391 → 0x000000000000000000000000000000000000000000000053dae6f4de0e435392
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(4656892130933487292174455030628140 [4.656e33])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000053dae6f4de0e435392 → 0x000000000000000000000000000000000000e59a3e05757cdab9de565ae73f2c
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1300989690052024392280743241334976444847989371 [1.3e45])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000e59a3e05757cdab9de565ae73f2c → 0x000000000000000000000000003a56a113ed06b8a15edbe650066e8052cda27b
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(8)
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000003a56a113ed06b8a15edbe650066e8052cda27b → 8
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(88951765034979227950908140254600 [8.895e31])
+    ├─  storage changes:
+    │   @ 0: 8 → 0x0000000000000000000000000000000000000462baa77d433b062a5753997588
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000462baa77d433b062a5753997588 → 0x0000000000000000000000000000000000000462baa77d433b062a5753997589
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000462baa77d433b062a5753997589 → 0x0000000000000000000000000000000000000462baa77d433b062a575399758a
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000462baa77d433b062a575399758a → 0x0000000000000000000000000000000000000462baa77d433b062a575399758b
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(238460190571882555795264957927 [2.384e29])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000462baa77d433b062a575399758b → 0x00000000000000000000000000000000000000030281a581779567007206ede7
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000030281a581779567007206ede7 → 0x00000000000000000000000000000000000000030281a581779567007206ede8
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1183090023906505573843457141874678934777594542163 [1.183e48])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000030281a581779567007206ede8 → 0x000000000000000000000000cf3b976b0a6efb4849382c0fc6eefbd9feb67853
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000cf3b976b0a6efb4849382c0fc6eefbd9feb67853 → 0x000000000000000000000000cf3b976b0a6efb4849382c0fc6eefbd9feb67854
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(171922041257526931900244094019023081011 [1.719e38])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000cf3b976b0a6efb4849382c0fc6eefbd9feb67854 → 0x000000000000000000000000000000008156fb118070061c71b18206a11b0e33
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(156069128136646016645370800539952973891550422363271471256735976369550 [1.56e68])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000008156fb118070061c71b18206a11b0e33 → 0x00000005c9f708e132d0c929b843ffaa3577a9fabce662f1b46ad6229f9dad8e
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000005c9f708e132d0c929b843ffaa3577a9fabce662f1b46ad6229f9dad8e → 0x00000005c9f708e132d0c929b843ffaa3577a9fabce662f1b46ad6229f9dad8f
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(16843556904526463129174180904894500837697243078834188497766274046 [1.684e64])
+    ├─  storage changes:
+    │   @ 0: 0x00000005c9f708e132d0c929b843ffaa3577a9fabce662f1b46ad6229f9dad8f → 0x000000000028f1c56d09c01290fdc16afabf9195c8eca5cf92ec2ea3106b53fe
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(2016228125 [2.016e9])
+    ├─  storage changes:
+    │   @ 0: 0x000000000028f1c56d09c01290fdc16afabf9195c8eca5cf92ec2ea3106b53fe → 0x00000000000000000000000000000000000000000000000000000000782d331d
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5490)
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000000000782d331d → 5490
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5490 → 5491
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5491 → 5492
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(159)
+    ├─  storage changes:
+    │   @ 0: 5492 → 159
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 159 → 160
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 160 → 161
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 161 → 162
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(968210069 [9.682e8])
+    ├─  storage changes:
+    │   @ 0: 162 → 0x0000000000000000000000000000000000000000000000000000000039b5b695
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(177)
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000000000000000000039b5b695 → 177
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1411)
+    ├─  storage changes:
+    │   @ 0: 177 → 1411
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(295522374370986732678712103613954499446973669289531826 [2.955e53])
+    ├─  storage changes:
+    │   @ 0: 1411 → 0x0000000000000000000315dc9d2c26662992eee6cc7965cf94180bffe32099b2
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000315dc9d2c26662992eee6cc7965cf94180bffe32099b2 → 0x0000000000000000000315dc9d2c26662992eee6cc7965cf94180bffe32099b3
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(102017620554245811361303123454463274705851579239394526766061549752860 [1.02e68])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000315dc9d2c26662992eee6cc7965cf94180bffe32099b3 → 0x00000003c8b71921cb7d49b76e4d2357503c0d658f34b61e17454ad43caf921c
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000003c8b71921cb7d49b76e4d2357503c0d658f34b61e17454ad43caf921c → 0x00000003c8b71921cb7d49b76e4d2357503c0d658f34b61e17454ad43caf921d
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(7324)
+    ├─  storage changes:
+    │   @ 0: 0x00000003c8b71921cb7d49b76e4d2357503c0d658f34b61e17454ad43caf921d → 7324
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(4224338898683 [4.224e12])
+    ├─  storage changes:
+    │   @ 0: 7324 → 0x000000000000000000000000000000000000000000000000000003d78e382efb
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000003d78e382efb → 0x000000000000000000000000000000000000000000000000000003d78e382efc
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(4126256295249428973805386001050444276454716 [4.126e42])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000003d78e382efc → 0x00000000000000000000000000002f5dfa37b945cf3c1692af1072d61cdc553c
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000002f5dfa37b945cf3c1692af1072d61cdc553c → 0x00000000000000000000000000002f5dfa37b945cf3c1692af1072d61cdc553d
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000002f5dfa37b945cf3c1692af1072d61cdc553d → 0x00000000000000000000000000002f5dfa37b945cf3c1692af1072d61cdc553e
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(6273)
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000002f5dfa37b945cf3c1692af1072d61cdc553e → 6273
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6273 → 6274
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6274 → 6275
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(270)
+    ├─  storage changes:
+    │   @ 0: 6275 → 270
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5520)
+    ├─  storage changes:
+    │   @ 0: 270 → 5520
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1756889894958 [1.756e12])
+    ├─  storage changes:
+    │   @ 0: 5520 → 0x000000000000000000000000000000000000000000000000000001990ecc502e
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000001990ecc502e → 0x000000000000000000000000000000000000000000000000000001990ecc502f
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000001990ecc502f → 0x000000000000000000000000000000000000000000000000000001990ecc5030
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(429)
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000001990ecc5030 → 429
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(2270792410236829183297622409565305 [2.27e33])
+    ├─  storage changes:
+    │   @ 0: 429 → 0x0000000000000000000000000000000000006ff56e00e166403d9e8acc395479
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(44756457320620280166426614817439625740686279739258 [4.475e49])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000006ff56e00e166403d9e8acc395479 → 0x00000000000000000000001e9fa4f50a05171d9b440ccf969f249545fe52877a
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000001e9fa4f50a05171d9b440ccf969f249545fe52877a → 0x00000000000000000000001e9fa4f50a05171d9b440ccf969f249545fe52877b
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000001e9fa4f50a05171d9b440ccf969f249545fe52877b → 0x00000000000000000000001e9fa4f50a05171d9b440ccf969f249545fe52877c
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(2748119130565581482248121022628310491843099356865 [2.748e48])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000001e9fa4f50a05171d9b440ccf969f249545fe52877c → 0x000000000000000000000001e15dec7b6a8eedc7865c9cb5f5ed55c7c9a7eec1
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(86198151294950 [8.619e13])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000001e15dec7b6a8eedc7865c9cb5f5ed55c7c9a7eec1 → 0x00000000000000000000000000000000000000000000000000004e6592302fe6
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000004e6592302fe6 → 0x00000000000000000000000000000000000000000000000000004e6592302fe7
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000004e6592302fe7 → 0x00000000000000000000000000000000000000000000000000004e6592302fe8
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000004e6592302fe8 → 0x00000000000000000000000000000000000000000000000000004e6592302fe9
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(629127472349071119073135983374616067380926 [6.291e41])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000004e6592302fe9 → 0x00000000000000000000000000000738d6e7c88b2005232afe0703be003116be
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(7420)
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000738d6e7c88b2005232afe0703be003116be → 7420
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(6411)
+    ├─  storage changes:
+    │   @ 0: 7420 → 6411
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6411 → 6412
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6412 → 6413
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6413 → 6414
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6414 → 6415
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(4890)
+    ├─  storage changes:
+    │   @ 0: 6415 → 4890
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(68080615041992329552178683526355437307688204046575222848318896589770143391972 [6.808e76])
+    ├─  storage changes:
+    │   @ 0: 4890 → 0x96844338903b5409befe12035b3ae57823398d645f1bf6098b1f3baedcdd60e4
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x96844338903b5409befe12035b3ae57823398d645f1bf6098b1f3baedcdd60e4 → 0x96844338903b5409befe12035b3ae57823398d645f1bf6098b1f3baedcdd60e5
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(26)
+    ├─  storage changes:
+    │   @ 0: 0x96844338903b5409befe12035b3ae57823398d645f1bf6098b1f3baedcdd60e5 → 26
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 26 → 27
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(13788382336529161628416706279827049203626283687088388732412879081891301624 [1.378e73])
+    ├─  storage changes:
+    │   @ 0: 27 → 0x0007cdcf8694b92afbfa2b5f28b0c1db3c1146aa5706c6fe21e172a91fc208f8
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1)
+    ├─  storage changes:
+    │   @ 0: 0x0007cdcf8694b92afbfa2b5f28b0c1db3c1146aa5706c6fe21e172a91fc208f8 → 1
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 1 → 2
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 2 → 3
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 3 → 4
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(7302)
+    ├─  storage changes:
+    │   @ 0: 4 → 7302
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 7302 → 7303
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(33686550683468448747496496460794499618684945275902210 [3.368e52])
+    ├─  storage changes:
+    │   @ 0: 7303 → 0x000000000000000000005a0945f7b77493053ef436d0f118b2d6f19a97395902
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(308855472537072691891009429278522346077682140863972182280156323971207811 [3.088e71])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000005a0945f7b77493053ef436d0f118b2d6f19a97395902 → 0x00002cc0161028ec2d267596dc7841dea0a0861651cd885050363ec4a37a1283
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00002cc0161028ec2d267596dc7841dea0a0861651cd885050363ec4a37a1283 → 0x00002cc0161028ec2d267596dc7841dea0a0861651cd885050363ec4a37a1284
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5496)
+    ├─  storage changes:
+    │   @ 0: 0x00002cc0161028ec2d267596dc7841dea0a0861651cd885050363ec4a37a1284 → 5496
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5496 → 5497
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5497 → 5498
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5498 → 5499
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(245787 [2.457e5])
+    ├─  storage changes:
+    │   @ 0: 5499 → 245787
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 245787 → 245788
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(525)
+    ├─  storage changes:
+    │   @ 0: 245788 → 525
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(2786606 [2.786e6])
+    ├─  storage changes:
+    │   @ 0: 525 → 0x00000000000000000000000000000000000000000000000000000000002a852e
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5393300466305779122261011026490564318490 [5.393e39])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000000000002a852e → 0x0000000000000000000000000000000fd977e2ffa9802b95ad9245d87968951a
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000fd977e2ffa9802b95ad9245d87968951a → 0x0000000000000000000000000000000fd977e2ffa9802b95ad9245d87968951b
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(232745522584833279736945843162694 [2.327e32])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000fd977e2ffa9802b95ad9245d87968951b → 0x0000000000000000000000000000000000000b79a957f0d18393675022ecce46
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(4386913302556633629907186933836698341348240721564753 [4.386e51])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000b79a957f0d18393675022ecce46 → 0x000000000000000000000bb9a5dbf7cc2b21de0c9edbf3cfcad1c1cb1711d451
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(21019053 [2.101e7])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000bb9a5dbf7cc2b21de0c9edbf3cfcad1c1cb1711d451 → 0x000000000000000000000000000000000000000000000000000000000140b9ad
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5410803203012632594726652620275919775276178493486284505837840432804428 [5.41e69])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000000000140b9ad → 0x000000c8b2a5fbc8e61e74d27949815f21e4cad9b23d8062b7b23783aca2b24c
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(905452916044160151948685039716373020608 [9.054e38])
+    ├─  storage changes:
+    │   @ 0: 0x000000c8b2a5fbc8e61e74d27949815f21e4cad9b23d8062b7b23783aca2b24c → 0x00000000000000000000000000000002a92fe36fc50588cd26cf475dc622bfc0
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000002a92fe36fc50588cd26cf475dc622bfc0 → 0x00000000000000000000000000000002a92fe36fc50588cd26cf475dc622bfc1
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1453)
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000002a92fe36fc50588cd26cf475dc622bfc1 → 1453
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 1453 → 1454
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(56)
+    ├─  storage changes:
+    │   @ 0: 1454 → 56
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(7483)
+    ├─  storage changes:
+    │   @ 0: 56 → 7483
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(4240)
+    ├─  storage changes:
+    │   @ 0: 7483 → 4240
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(37149671158191137448514798969233273609691440028373 [3.714e49])
+    ├─  storage changes:
+    │   @ 0: 4240 → 0x0000000000000000000000196b38de5d65fbb57bd1630c3b76b33f4b45071ad5
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(4104)
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000196b38de5d65fbb57bd1630c3b76b33f4b45071ad5 → 4104
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 4104 → 4105
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(26778841541345304812193046857 [2.677e28])
+    ├─  storage changes:
+    │   @ 0: 4105 → 0x00000000000000000000000000000000000000005686f044c9e08df1a1f3e149
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(433)
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000005686f044c9e08df1a1f3e149 → 433
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(92536982278445214564618876 [9.253e25])
+    ├─  storage changes:
+    │   @ 0: 433 → 0x0000000000000000000000000000000000000000004c8b77dc6f8d469c20127c
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000004c8b77dc6f8d469c20127c → 0x0000000000000000000000000000000000000000004c8b77dc6f8d469c20127d
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(3818)
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000004c8b77dc6f8d469c20127d → 3818
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1742494694999719163417281990656983763880531666497041405102049302913995 [1.742e69])
+    ├─  storage changes:
+    │   @ 0: 3818 → 0x00000040a1f9f6db86b5f031c3925246cd3ce73872cfbab9c6e5e919f81fa3cb
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000040a1f9f6db86b5f031c3925246cd3ce73872cfbab9c6e5e919f81fa3cb → 0x00000040a1f9f6db86b5f031c3925246cd3ce73872cfbab9c6e5e919f81fa3cc
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(80)
+    ├─  storage changes:
+    │   @ 0: 0x00000040a1f9f6db86b5f031c3925246cd3ce73872cfbab9c6e5e919f81fa3cc → 80
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(13788382336529161628416706279827049203626283687088388732412879081891301623 [1.378e73])
+    ├─  storage changes:
+    │   @ 0: 80 → 0x0007cdcf8694b92afbfa2b5f28b0c1db3c1146aa5706c6fe21e172a91fc208f7
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(2035786394315136534502139153503821579492783080118 [2.035e48])
+    ├─  storage changes:
+    │   @ 0: 0x0007cdcf8694b92afbfa2b5f28b0c1db3c1146aa5706c6fe21e172a91fc208f7 → 0x0000000000000000000000016497d1b2feec3b03f03351f7177bce88ec30c2b6
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(458)
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000016497d1b2feec3b03f03351f7177bce88ec30c2b6 → 458
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(140871040767871052709003064324280356939047266185116008759337253176148 [1.408e68])
+    ├─  storage changes:
+    │   @ 0: 458 → 0x0000000539a687e402b20c23234699cb7a46f234dddf4b3fdf5d8db07e618354
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(0)
+    ├─  storage changes:
+    │   @ 0: 0x0000000539a687e402b20c23234699cb7a46f234dddf4b3fdf5d8db07e618354 → 0
+    └─ ← [Stop]
+
+  [22492] Counter::setNumber(6445)
+    ├─  storage changes:
+    │   @ 0: 0 → 6445
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6445 → 6446
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6446 → 6447
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6447 → 6448
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6448 → 6449
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5121)
+    ├─  storage changes:
+    │   @ 0: 6449 → 5121
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1)
+    ├─  storage changes:
+    │   @ 0: 5121 → 1
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 1 → 2
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5751)
+    ├─  storage changes:
+    │   @ 0: 2 → 5751
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5010)
+    ├─  storage changes:
+    │   @ 0: 5751 → 5010
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5010 → 5011
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1654569189871 [1.654e12])
+    ├─  storage changes:
+    │   @ 0: 5011 → 0x000000000000000000000000000000000000000000000000000001813c0241ef
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000001813c0241ef → 0x000000000000000000000000000000000000000000000000000001813c0241f0
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000001813c0241f0 → 0x000000000000000000000000000000000000000000000000000001813c0241f1
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000001813c0241f1 → 0x000000000000000000000000000000000000000000000000000001813c0241f2
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000001813c0241f2 → 0x000000000000000000000000000000000000000000000000000001813c0241f3
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000001813c0241f3 → 0x000000000000000000000000000000000000000000000000000001813c0241f4
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000001813c0241f4 → 0x000000000000000000000000000000000000000000000000000001813c0241f5
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(9977390067740471192950318839283290226288 [9.977e39])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000001813c0241f5 → 0x0000000000000000000000000000001d52276e094b493fbe8117d716490c3e70
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(45470882488068932415 [4.547e19])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000001d52276e094b493fbe8117d716490c3e70 → 0x000000000000000000000000000000000000000000000002770906b534e1033f
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000002770906b534e1033f → 0x000000000000000000000000000000000000000000000002770906b534e10340
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1555817566732586519580256001361567 [1.555e33])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000002770906b534e10340 → 0x0000000000000000000000000000000000004cb52dafdee11428822849ac869f
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000004cb52dafdee11428822849ac869f → 0x0000000000000000000000000000000000004cb52dafdee11428822849ac86a0
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000004cb52dafdee11428822849ac86a0 → 0x0000000000000000000000000000000000004cb52dafdee11428822849ac86a1
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000004cb52dafdee11428822849ac86a1 → 0x0000000000000000000000000000000000004cb52dafdee11428822849ac86a2
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000004cb52dafdee11428822849ac86a2 → 0x0000000000000000000000000000000000004cb52dafdee11428822849ac86a3
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000004cb52dafdee11428822849ac86a3 → 0x0000000000000000000000000000000000004cb52dafdee11428822849ac86a4
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000004cb52dafdee11428822849ac86a4 → 0x0000000000000000000000000000000000004cb52dafdee11428822849ac86a5
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000004cb52dafdee11428822849ac86a5 → 0x0000000000000000000000000000000000004cb52dafdee11428822849ac86a6
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(35685905 [3.568e7])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000004cb52dafdee11428822849ac86a6 → 0x0000000000000000000000000000000000000000000000000000000002208611
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(117)
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000000000000000000002208611 → 117
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 117 → 118
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 118 → 119
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(966325439491 [9.663e11])
+    ├─  storage changes:
+    │   @ 0: 119 → 0x000000000000000000000000000000000000000000000000000000e0fd7c0c03
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000000e0fd7c0c03 → 0x000000000000000000000000000000000000000000000000000000e0fd7c0c04
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5049)
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000000e0fd7c0c04 → 5049
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5049 → 5050
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5050 → 5051
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(207143256315851387633455150802217088498806122967615466799425156 [2.071e62])
+    ├─  storage changes:
+    │   @ 0: 5051 → 0x00000000000080e7d31986970443e070b59123efd1e59871a86508b3d528e684
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(117)
+    ├─  storage changes:
+    │   @ 0: 0x00000000000080e7d31986970443e070b59123efd1e59871a86508b3d528e684 → 117
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(2726652634901829622386906768569944391989753066838681084380265587144 [2.726e66])
+    ├─  storage changes:
+    │   @ 0: 117 → 0x0000000019e42019b687c607d6f8227543051c6b49054be3ac4c0a36936421c8
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000019e42019b687c607d6f8227543051c6b49054be3ac4c0a36936421c8 → 0x0000000019e42019b687c607d6f8227543051c6b49054be3ac4c0a36936421c9
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000019e42019b687c607d6f8227543051c6b49054be3ac4c0a36936421c9 → 0x0000000019e42019b687c607d6f8227543051c6b49054be3ac4c0a36936421ca
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000019e42019b687c607d6f8227543051c6b49054be3ac4c0a36936421ca → 0x0000000019e42019b687c607d6f8227543051c6b49054be3ac4c0a36936421cb
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000019e42019b687c607d6f8227543051c6b49054be3ac4c0a36936421cb → 0x0000000019e42019b687c607d6f8227543051c6b49054be3ac4c0a36936421cc
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000019e42019b687c607d6f8227543051c6b49054be3ac4c0a36936421cc → 0x0000000019e42019b687c607d6f8227543051c6b49054be3ac4c0a36936421cd
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(942260844244988920491 [9.422e20])
+    ├─  storage changes:
+    │   @ 0: 0x0000000019e42019b687c607d6f8227543051c6b49054be3ac4c0a36936421cd → 0x000000000000000000000000000000000000000000000033147efd87663d02ab
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(6140754731969362742738586305241277655 [6.14e36])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000033147efd87663d02ab → 0x00000000000000000000000000000000049eaa9562b8521caecd600232f7e4d7
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000049eaa9562b8521caecd600232f7e4d7 → 0x00000000000000000000000000000000049eaa9562b8521caecd600232f7e4d8
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(10609121924426136026185705492208379788793870924089 [1.06e49])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000049eaa9562b8521caecd600232f7e4d8 → 0x00000000000000000000000742517af75e9746d9edb2bf09a1bb8a4bba19b939
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000742517af75e9746d9edb2bf09a1bb8a4bba19b939 → 0x00000000000000000000000742517af75e9746d9edb2bf09a1bb8a4bba19b93a
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000742517af75e9746d9edb2bf09a1bb8a4bba19b93a → 0x00000000000000000000000742517af75e9746d9edb2bf09a1bb8a4bba19b93b
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000742517af75e9746d9edb2bf09a1bb8a4bba19b93b → 0x00000000000000000000000742517af75e9746d9edb2bf09a1bb8a4bba19b93c
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000742517af75e9746d9edb2bf09a1bb8a4bba19b93c → 0x00000000000000000000000742517af75e9746d9edb2bf09a1bb8a4bba19b93d
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000742517af75e9746d9edb2bf09a1bb8a4bba19b93d → 0x00000000000000000000000742517af75e9746d9edb2bf09a1bb8a4bba19b93e
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5950)
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000742517af75e9746d9edb2bf09a1bb8a4bba19b93e → 5950
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(31127994592019512958586403593016905494406940886462379648 [3.112e55])
+    ├─  storage changes:
+    │   @ 0: 5950 → 0x00000000000000000144fdce3169dc662f2c0359118b387e0df29037c4c43680
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1115487613111197287539 [1.115e21])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000144fdce3169dc662f2c0359118b387e0df29037c4c43680 → 0x00000000000000000000000000000000000000000000003c78801a049948c473
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000003c78801a049948c473 → 0x00000000000000000000000000000000000000000000003c78801a049948c474
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(2786606 [2.786e6])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000003c78801a049948c474 → 0x00000000000000000000000000000000000000000000000000000000002a852e
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1300749530256399965334497168945729109020268078254 [1.3e48])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000000000002a852e → 0x000000000000000000000000e3d7a04fa0bb278c423618a2d7606236fdc0a4ae
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000e3d7a04fa0bb278c423618a2d7606236fdc0a4ae → 0x000000000000000000000000e3d7a04fa0bb278c423618a2d7606236fdc0a4af
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000e3d7a04fa0bb278c423618a2d7606236fdc0a4af → 0x000000000000000000000000e3d7a04fa0bb278c423618a2d7606236fdc0a4b0
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000e3d7a04fa0bb278c423618a2d7606236fdc0a4b0 → 0x000000000000000000000000e3d7a04fa0bb278c423618a2d7606236fdc0a4b1
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(209)
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000e3d7a04fa0bb278c423618a2d7606236fdc0a4b1 → 209
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(4844)
+    ├─  storage changes:
+    │   @ 0: 209 → 4844
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 4844 → 4845
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 4845 → 4846
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(80373781469986797 [8.037e16])
+    ├─  storage changes:
+    │   @ 0: 4846 → 0x000000000000000000000000000000000000000000000000011d8b8745c5ffed
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1658422589740311587660523203531212317442 [1.658e39])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000011d8b8745c5ffed → 0x00000000000000000000000000000004dfa892961ab172ebc4808f866cd3e302
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000004dfa892961ab172ebc4808f866cd3e302 → 0x00000000000000000000000000000004dfa892961ab172ebc4808f866cd3e303
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000004dfa892961ab172ebc4808f866cd3e303 → 0x00000000000000000000000000000004dfa892961ab172ebc4808f866cd3e304
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(470700382967836063722437335207188631635445363325449859451324 [4.707e59])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000004dfa892961ab172ebc4808f866cd3e304 → 0x000000000000004afca54c9f917ea1304acfb9a209388ab2a2a34eed7f6f49bc
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000004afca54c9f917ea1304acfb9a209388ab2a2a34eed7f6f49bc → 0x000000000000004afca54c9f917ea1304acfb9a209388ab2a2a34eed7f6f49bd
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(453258660544845930320135453795016764938732767101 [4.532e47])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000004afca54c9f917ea1304acfb9a209388ab2a2a34eed7f6f49bd → 0x0000000000000000000000004f64d23f5450d04903cc4132c875851ba585077d
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(102645832189368912283014766051708274244907853324013370068251389392693104 [1.026e71])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000004f64d23f5450d04903cc4132c875851ba585077d → 0x00000edf587410524556c775977fa74056b772bcbf494140493d5c44b4d5a770
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000edf587410524556c775977fa74056b772bcbf494140493d5c44b4d5a770 → 0x00000edf587410524556c775977fa74056b772bcbf494140493d5c44b4d5a771
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000edf587410524556c775977fa74056b772bcbf494140493d5c44b4d5a771 → 0x00000edf587410524556c775977fa74056b772bcbf494140493d5c44b4d5a772
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000edf587410524556c775977fa74056b772bcbf494140493d5c44b4d5a772 → 0x00000edf587410524556c775977fa74056b772bcbf494140493d5c44b4d5a773
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000edf587410524556c775977fa74056b772bcbf494140493d5c44b4d5a773 → 0x00000edf587410524556c775977fa74056b772bcbf494140493d5c44b4d5a774
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000edf587410524556c775977fa74056b772bcbf494140493d5c44b4d5a774 → 0x00000edf587410524556c775977fa74056b772bcbf494140493d5c44b4d5a775
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000edf587410524556c775977fa74056b772bcbf494140493d5c44b4d5a775 → 0x00000edf587410524556c775977fa74056b772bcbf494140493d5c44b4d5a776
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000edf587410524556c775977fa74056b772bcbf494140493d5c44b4d5a776 → 0x00000edf587410524556c775977fa74056b772bcbf494140493d5c44b4d5a777
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(115792089237316195423570985008687907853269984665640564039457584007913129639935 [1.157e77])
+    ├─  storage changes:
+    │   @ 0: 0x00000edf587410524556c775977fa74056b772bcbf494140493d5c44b4d5a777 → 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(706)
+    ├─  storage changes:
+    │   @ 0: 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff → 706
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(6881)
+    ├─  storage changes:
+    │   @ 0: 706 → 6881
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6881 → 6882
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6882 → 6883
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6883 → 6884
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 6884 → 6885
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(27112280262980894607455516609 [2.711e28])
+    ├─  storage changes:
+    │   @ 0: 6885 → 0x0000000000000000000000000000000000000000579ac0aa1ba5111e86d377c1
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000579ac0aa1ba5111e86d377c1 → 0x0000000000000000000000000000000000000000579ac0aa1ba5111e86d377c2
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(33682912936194971 [3.368e16])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000579ac0aa1ba5111e86d377c2 → 0x0000000000000000000000000000000000000000000000000077aa6e4c8ff39b
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000000000000077aa6e4c8ff39b → 0x0000000000000000000000000000000000000000000000000077aa6e4c8ff39c
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1334943555688113444783015714006176001303799617848582929 [1.334e54])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000000000000077aa6e4c8ff39c → 0x0000000000000000000deffd7251795bd0c281bab4ef20f99f4508e1dc27a311
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(536)
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000deffd7251795bd0c281bab4ef20f99f4508e1dc27a311 → 536
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(3345)
+    ├─  storage changes:
+    │   @ 0: 536 → 3345
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5709)
+    ├─  storage changes:
+    │   @ 0: 3345 → 5709
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5709 → 5710
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(3417572 [3.417e6])
+    ├─  storage changes:
+    │   @ 0: 5710 → 0x00000000000000000000000000000000000000000000000000000000003425e4
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000000000003425e4 → 0x00000000000000000000000000000000000000000000000000000000003425e5
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(209228283 [2.092e8])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000000000003425e5 → 0x000000000000000000000000000000000000000000000000000000000c7891fb
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(14728506018613 [1.472e13])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000000000c7891fb → 0x00000000000000000000000000000000000000000000000000000d653f5e8b35
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(22851967040432626393390178811050300328397230529486395405864888119 [2.285e64])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000000d653f5e8b35 → 0x0000000000378cd0627262519e6ecc694a2148b3fffc055f508064c141596737
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(3458402526362892940948943842424084342195814831531785814630239231 [3.458e63])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000378cd0627262519e6ecc694a2148b3fffc055f508064c141596737 → 0x000000000008682b4f1bdc6f3f6df8c8911121a401957ac3dfd9c4a452fc8bff
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(452857328471 [4.528e11])
+    ├─  storage changes:
+    │   @ 0: 0x000000000008682b4f1bdc6f3f6df8c8911121a401957ac3dfd9c4a452fc8bff → 0x0000000000000000000000000000000000000000000000000000006970667357
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000000000000000006970667357 → 0x0000000000000000000000000000000000000000000000000000006970667358
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000000000000000006970667358 → 0x0000000000000000000000000000000000000000000000000000006970667359
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000000000000000006970667359 → 0x000000000000000000000000000000000000000000000000000000697066735a
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(4438998725953523531484278 [4.438e24])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000000697066735a → 0x00000000000000000000000000000000000000000003abfe9a65df821f218c76
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(120238475301615525762650222311245676617160238694518 [1.202e50])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000003abfe9a65df821f218c76 → 0x000000000000000000000052453fb49355e21e989e50c98795889874c20a0076
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000052453fb49355e21e989e50c98795889874c20a0076 → 0x000000000000000000000052453fb49355e21e989e50c98795889874c20a0077
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000052453fb49355e21e989e50c98795889874c20a0077 → 0x000000000000000000000052453fb49355e21e989e50c98795889874c20a0078
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(50224557849142464920376738126971533587571003839784380517614917746 [5.022e64])
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000052453fb49355e21e989e50c98795889874c20a0078 → 0x00000000007a16d1af5a03f835630fc06729d3bfb62c50415a78ce3b50c89872
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(2976142963702019302030219846755907051182525294594304902731598929 [2.976e63])
+    ├─  storage changes:
+    │   @ 0: 0x00000000007a16d1af5a03f835630fc06729d3bfb62c50415a78ce3b50c89872 → 0x0000000000073c0eed9d83f4a0381aadd3b41b8f2249a54511bd5d26408f0c51
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000073c0eed9d83f4a0381aadd3b41b8f2249a54511bd5d26408f0c51 → 0x0000000000073c0eed9d83f4a0381aadd3b41b8f2249a54511bd5d26408f0c52
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000073c0eed9d83f4a0381aadd3b41b8f2249a54511bd5d26408f0c52 → 0x0000000000073c0eed9d83f4a0381aadd3b41b8f2249a54511bd5d26408f0c53
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x0000000000073c0eed9d83f4a0381aadd3b41b8f2249a54511bd5d26408f0c53 → 0x0000000000073c0eed9d83f4a0381aadd3b41b8f2249a54511bd5d26408f0c54
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(7126)
+    ├─  storage changes:
+    │   @ 0: 0x0000000000073c0eed9d83f4a0381aadd3b41b8f2249a54511bd5d26408f0c54 → 7126
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 7126 → 7127
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 7127 → 7128
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 7128 → 7129
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(9660557056105195887512055205992535980107777623889001617744173889260188 [9.66e69])
+    ├─  storage changes:
+    │   @ 0: 7129 → 0x000001665479574778ec03a4fd2d9cbc544c9390f3bd6c04723646ab16c08a9c
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(968210070 [9.682e8])
+    ├─  storage changes:
+    │   @ 0: 0x000001665479574778ec03a4fd2d9cbc544c9390f3bd6c04723646ab16c08a9c → 0x0000000000000000000000000000000000000000000000000000000039b5b696
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1654569189875 [1.654e12])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000000000000000000000000000000000000039b5b696 → 0x000000000000000000000000000000000000000000000000000001813c0241f3
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000001813c0241f3 → 0x000000000000000000000000000000000000000000000000000001813c0241f4
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000001813c0241f4 → 0x000000000000000000000000000000000000000000000000000001813c0241f5
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5869)
+    ├─  storage changes:
+    │   @ 0: 0x000000000000000000000000000000000000000000000000000001813c0241f5 → 5869
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(905452916044160151948685039716373020610 [9.054e38])
+    ├─  storage changes:
+    │   @ 0: 5869 → 0x00000000000000000000000000000002a92fe36fc50588cd26cf475dc622bfc2
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(140302881533853 [1.403e14])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000002a92fe36fc50588cd26cf475dc622bfc2 → 0x00000000000000000000000000000000000000000000000000007f9acf6a2f9d
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000007f9acf6a2f9d → 0x00000000000000000000000000000000000000000000000000007f9acf6a2f9e
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000007f9acf6a2f9e → 0x00000000000000000000000000000000000000000000000000007f9acf6a2f9f
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1042412599676123974769027530488021101069295098082243340417835229 [1.042e63])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000007f9acf6a2f9f → 0x00000000000288b1e876a9ceb7d46c2673208429159cc9050adb55a6ae6720dd
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000288b1e876a9ceb7d46c2673208429159cc9050adb55a6ae6720dd → 0x00000000000288b1e876a9ceb7d46c2673208429159cc9050adb55a6ae6720de
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000288b1e876a9ceb7d46c2673208429159cc9050adb55a6ae6720de → 0x00000000000288b1e876a9ceb7d46c2673208429159cc9050adb55a6ae6720df
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000288b1e876a9ceb7d46c2673208429159cc9050adb55a6ae6720df → 0x00000000000288b1e876a9ceb7d46c2673208429159cc9050adb55a6ae6720e0
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000288b1e876a9ceb7d46c2673208429159cc9050adb55a6ae6720e0 → 0x00000000000288b1e876a9ceb7d46c2673208429159cc9050adb55a6ae6720e1
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000288b1e876a9ceb7d46c2673208429159cc9050adb55a6ae6720e1 → 0x00000000000288b1e876a9ceb7d46c2673208429159cc9050adb55a6ae6720e2
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(300470154703935678130898672456805635547600514272482 [3.004e50])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000288b1e876a9ceb7d46c2673208429159cc9050adb55a6ae6720e2 → 0x0000000000000000000000cd970bb93cf01b623966ff3b551ead0e5bc0f54ce2
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(3500007561 [3.5e9])
+    ├─  storage changes:
+    │   @ 0: 0x0000000000000000000000cd970bb93cf01b623966ff3b551ead0e5bc0f54ce2 → 0x00000000000000000000000000000000000000000000000000000000d09de089
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(160956018204414348202199429896127701724 [1.609e38])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000000000d09de089 → 0x00000000000000000000000000000000791700638b47bbf15c5e9dcf88b0e2dc
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000791700638b47bbf15c5e9dcf88b0e2dc → 0x00000000000000000000000000000000791700638b47bbf15c5e9dcf88b0e2dd
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(5992)
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000791700638b47bbf15c5e9dcf88b0e2dd → 5992
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 5992 → 5993
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(115792089237316195423570985008687907853269984665640564039457584007913129639933 [1.157e77])
+    ├─  storage changes:
+    │   @ 0: 5993 → 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(2016228124 [2.016e9])
+    ├─  storage changes:
+    │   @ 0: 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd → 0x00000000000000000000000000000000000000000000000000000000782d331c
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(1445703325583743154166473634567436902407077465072177370856 [1.445e57])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000000000000000000000000782d331c → 0x00000000000000003af5d8d47338f842135a7e53fd766c720be2b578b15dd6e8
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(16947927572196340076707160889545071781068956058651969151280732732 [1.694e64])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000003af5d8d47338f842135a7e53fd766c720be2b578b15dd6e8 → 0x00000000002932b8a1f044e14d047890bd4d38ffc2e18f55221ea5dcb8c1da3c
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(118789409119676736910488613616827 [1.187e32])
+    ├─  storage changes:
+    │   @ 0: 0x00000000002932b8a1f044e14d047890bd4d38ffc2e18f55221ea5dcb8c1da3c → 0x00000000000000000000000000000000000005db5548334f25428ee6a282fcbb
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(115792089237316195423570985008687907853269984665640564039457584007913129639932 [1.157e77])
+    ├─  storage changes:
+    │   @ 0: 0x00000000000000000000000000000000000005db5548334f25428ee6a282fcbb → 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc
+    └─ ← [Stop]
+
+  [5318] Counter::increment()
+    ├─  storage changes:
+    │   @ 0: 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc → 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd
+    └─ ← [Stop]
+
+  [5392] Counter::setNumber(3302610030142252698397293097423559284583189205313684039612137092 [3.302e63])
+    ├─  storage changes:
+    │   @ 0: 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd → 0x000000000008073821e930bc4d850f4f4e5c91596883e433ed64053e06fe7e84
+    └─ ← [Stop]
+
+  [33713] CounterTest::invariant_NumberIsNonNegative()
+    ├─ [0] console::log("Invariant check number:", 1) [staticcall]
+    │   └─ ← [Stop]
+    ├─ [2424] Counter::number() [staticcall]
+    │   └─ ← [Return] 3302610030142252698397293097423559284583189205313684039612137092 [3.302e63]
+    ├─  storage changes:
+    │   @ 32: 0 → 1
+    └─ ← [Stop]
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 8.31s (8.31s CPU time)
+
+Ran 1 test suite in 8.33s (8.31s CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)
