@@ -9,6 +9,9 @@ contract Counter {
     }
 
     function increment() public {
+        if (number == type(uint256).max) {
+            return;
+        }
         number++;
     }
 }
